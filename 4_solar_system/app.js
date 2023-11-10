@@ -70,7 +70,7 @@ else{
       break;
   }
   const weightOnPlanet = (inputValue.value * gravity / 9.81).toFixed(2);
-  const result = `Ağırlığınız ${planetName}'da yaklaşık ${weightOnPlanet} kilogramdır.`;
+  const result = `Your weight in the ${planetName}'${weightOnPlanet} kilogram.`;
 
   let para = document.createElement("p")
   para.id = "demo"
