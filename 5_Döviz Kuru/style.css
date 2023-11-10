@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(53, 143, 179);
+}
 #main {
     display: flex;
     flex-direction: column;
@@ -14,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 50vh;
 }
 .header-wrapper{
     display: flex;
