@@ -1,5 +1,5 @@
 
-<p> simple calculation app</p>
+<p>A simple calculation app</p>
 
 <hr>
 
