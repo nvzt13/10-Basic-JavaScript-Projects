@@ -1,0 +1,82 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*------------------------------body chıld1(container)-----------------------*/
+
+.row{
+    display: flex;
+}
+.seat{
+    background-color:  #444451;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    margin: 3px;
+}
+.seat.selected{
+    background-color: #f6eb6f;
+}
+.seat.reserved{
+    background:#fff;
+}
+.seat:not(.reserved):hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(3){
+    margin-right: 20px;
+}
+.screen{
+    background: #fff;
+    height:50px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.7);
+}
+
+/* --------------------------------body chıld2(movie list)-------------------*/
+
+.movie-list{
+    margin: 20px 0;
+}
+
+/* --------------------------------body chıld3(ul)-------------------*/
+
+.info{
+    background-color: rgba(0, 0, 0,0.2);
+    padding: 5px 10px;
+    color: #777;
+    display: flex;
+    margin-bottom:15px ;
+}
+.info li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.info li div{
+    margin-right: 3px;
+}
+
+/* --------------------------------body chıld4(text)-------------------*/
+
+.text span{
+    color: #f6eb6f;
+}
