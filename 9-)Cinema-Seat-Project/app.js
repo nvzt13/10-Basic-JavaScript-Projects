@@ -4,6 +4,8 @@ const amount = document.getElementById("amount")
 const select = document.getElementById("movie")
 const seats = document.querySelectorAll(".seat:not(.reserved)")
 
+getFromLocalStorage()
+calculaterTotal()
 // koltuklara tıklanınca oluşan addevent
 container.addEventListener("click", function(e){
 
@@ -58,6 +60,14 @@ function calculaterTotal(){
 }
 function getFromLocalStorage(){
     const selectedSeats = JSON.parse(localStorage.getItem("selectedSeat"))
+
+    if(selectedSeats !=null  && selectedSeats.length > 0){
+        seats.forEach(function(seat,index){
+            if(selectedSeats.indexOf(index) > -1){
+                seat.classList.add("selected")
+            }
+        })
+    }
 
  
     const selectedMovieIndex = JSON.parse(localStorage.getItem("selectedMovieIndex"))
