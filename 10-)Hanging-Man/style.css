@@ -33,11 +33,35 @@ body{
 #word{
   display: flex;
   position:absolute;
-  bottom: -200px;
   left: 50%;
+  transform: translateX(-50%);
 }
 .letter{
   border-bottom: 3px solid yellow;
   font-size: 30px;
-  margin: 30px 10px;
+  margin: 0 3px;
+  height: 40px;
+  width: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-container{
+  background-color: rgb(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.popup{
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px 3px rgba(121, 128, 211, 1);
 }
