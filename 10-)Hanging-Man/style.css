@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(121, 128, 211, 1);
+  color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.container{
+  padding: 20px 20px;
+  height: 450px;
+  width: 450px;
+  position:relative;
+}
+.grafik{
+  fill: transparent;
+  stroke: white;
+  stroke-width: 4px;
+}
+.item{
+  display: none;
+}
+
+#wrong-letters{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+#word{
+  display: flex;
+  position:absolute;
+  bottom: -200px;
+  left: 50%;
+}
+.letter{
+  border-bottom: 3px solid black;
+  font-size: 30px;
+  margin: 30px 10px;
+}
