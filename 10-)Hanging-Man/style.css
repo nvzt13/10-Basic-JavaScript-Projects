@@ -21,9 +21,9 @@ body{
   stroke: white;
   stroke-width: 4px;
 }
-.item{
+/* .item{
   display: none;
-}
+} */
 
 #wrong-letters{
   position: absolute;
@@ -37,7 +37,7 @@ body{
   left: 50%;
 }
 .letter{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid yellow;
   font-size: 30px;
   margin: 30px 10px;
 }
