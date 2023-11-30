@@ -47,7 +47,7 @@ function updateWrongLetters(){
 
     //hatalı harf elementi (div)
     wrongLetters_el.innerHTML = `
-    ${wrongLetters.length > 0 ?`<h3>Hatalı Harfler</h3>`: "" }
+    ${wrongLetters.length > 0 ?`<h3>Wrong letters</h3>`: "" }
     ${wrongLetters.map(letter => `<span> ${letter}<span>`)}
     `;
 
