@@ -21,10 +21,9 @@ body{
   stroke: white;
   stroke-width: 4px;
 }
-/* .item{
+.item{
   display: none;
-} */
-
+}
 #wrong-letters{
   position: absolute;
   top: 30px;
@@ -64,4 +63,16 @@ body{
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 15px 10px 3px rgba(121, 128, 211, 1);
+}
+#message{
+  background-color: rgba(0, 0, 0, 0.726);
+  font-size: 20px;
+  border-radius: 5px;
+  padding:  10px 80px;
+  position: absolute;
+  bottom: -500px;
+  transition: transform 0.4s ease-in-out;
+}
+#message.show{
+  transform: translateY(-300px);
 }
