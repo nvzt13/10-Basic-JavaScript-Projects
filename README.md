@@ -6,7 +6,10 @@ First, run the clone repo:
 
 `
 git clone https://github.com/nvzt13/10-Basic-JavaScript-Projects.git
+
 cd 10-Basic-JavaScript-Projects
+
 code .
 `
+
 Then you can see all projects.
